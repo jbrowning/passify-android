@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center|fill"
+			android:background="#333"
+			android:paddingBottom="5dip">
+			<TextView 
+				android:id="@+id/history_activity_titleTV"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:gravity="center"
+				android:text="@string/history_activity_title"
+				android:textSize="20dip"
+				android:textStyle="bold"
+				android:textColor="#fff"
+				android:paddingLeft="5dip"
+				android:paddingBottom="2dip"
+				android:paddingTop="5dip"/>
+			<TextView 
+				android:id="@+id/history_activity_subtitleTV"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:gravity="center"
+				android:text="@string/history_activity_subtitle"
+				android:textSize="12dip"
+				android:textColor="#fff"
+				android:paddingLeft="5dip"/>
+		</LinearLayout>
+		
+		<ListView android:id="@+id/android:list"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+	  	<TextView android:id="@+id/android:empty"
+	          android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+				android:gravity="center"
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip"
+	        	android:text="No passwords in history"/>
+	</LinearLayout>
+

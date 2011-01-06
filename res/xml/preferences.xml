@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs_history_category">
+	<CheckBoxPreference
+		android:key="prefs_history_keep"
+		android:defaultValue="true"
+		android:title="@string/prefs_history_keep"/>
+	<ListPreference
+		android:key="prefs_history_limit"
+		android:defaultValue="5"
+		android:title="@string/prefs_history_limit"
+		android:entries="@array/pass_history_size_items"
+		android:entryValues="@array/pass_history_size_items"
+		android:dialogTitle="@string/prefs_history_size_dialog_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

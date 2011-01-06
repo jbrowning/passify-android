@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	
+		<TextView 
+			android:id="@+id/passTV"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:background="#333"
+			android:text="Generated Password"
+			android:textStyle="bold"
+			android:textColor="#ffffff"
+			android:textSize="20sp"
+			android:paddingBottom="20dip"
+			android:paddingTop="20dip"/>
+		
+	    <View
+	        android:layout_height="4dip"
+	        android:layout_width="fill_parent"
+	        android:layout_gravity="center"
+			android:background="#cccccc" />
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="15dip">
+			<Button
+				android:id="@+id/generateBT"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/generate_generate_button"/>
+			<Button
+				android:id="@+id/copyBT"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/generate_copy_button"/>
+		</LinearLayout>
+	
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dip"
+	    android:paddingBottom="5dip"
+	    android:stretchColumns="1">
+	
+			<TableRow
+				android:paddingBottom="5dip">
+				<TextView
+					android:id="@+id/passLengthTV"
+					android:layout_column="1"
+					android:text="@string/generate_password_length_label"
+					android:textSize="20sp"
+					android:padding="3dip" android:layout_gravity="left|center_vertical"/>
+				<Spinner
+					android:id="@+id/passLengthSP"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:prompt="@string/pass_length_prompt" android:layout_gravity="right|center_vertical"/>
+			</TableRow>
+		
+			<View
+		        android:layout_height="2dip"
+		        android:background="#cccccc"/>	
+	    
+		    <TableRow
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip"
+				android:layout_width="fill_parent">
+				<TextView 
+					android:id="@+id/mixedCaseTV"
+					android:layout_column="1"
+					android:text="@string/generate_mixed_case_label"
+					android:textSize="20sp"
+					android:padding="3dip" android:layout_gravity="left|center_vertical"/>
+				<CheckBox
+					android:id="@+id/mixedCaseCB"
+					android:padding="3dip" android:layout_gravity="right|center_vertical"/>
+			</TableRow>
+			
+			<View
+		        android:layout_height="2dip"
+		        android:background="#cccccc"/>
+	        
+			<TableRow
+				android:paddingTop="5dip"
+				android:paddingBottom="5dip">
+				<TextView 
+					android:id="@+id/symbolsTV"
+					android:layout_column="1"
+					android:text="@string/generate_symbols_label"
+					android:textSize="20sp"
+					android:padding="3dip" android:layout_gravity="left|center_vertical"/>
+				<CheckBox
+					android:id="@+id/symbolsCB"
+					android:padding="3dip" android:layout_gravity="right|center_vertical"/>
+			</TableRow>
+		
+			<View
+		        android:layout_height="2dip"
+		        android:background="#cccccc"/>
+	        
+			<TableRow
+				android:paddingTop="5dip"
+				android:paddingBottom="0dip">
+				<TextView 
+					android:id="@+id/numbersTV"
+					android:layout_column="1"
+					android:text="@string/generate_numbers_label"
+					android:textSize="20sp"
+					android:padding="3dip" android:layout_gravity="left|center_vertical"/>
+				<CheckBox
+					android:id="@+id/numbersCB"
+					android:padding="3dip" android:layout_gravity="right|center_vertical"/>
+			</TableRow>
+		</TableLayout>
+
+		<Button
+			android:id="@+id/historyBT"
+			android:textStyle="bold"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/generate_history_button"/>
+	
+	</LinearLayout>
+</ScrollView>

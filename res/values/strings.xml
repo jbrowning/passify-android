@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Passify</string>
+	<string name="pass_copied_toast">Password copied to clipboard</string>
+	<string name="dialog_ok">OK</string>
+	<string name="dialog_cancel">Cancel</string>
+	<!-- Generate Activity -->
+	<string name="generate_generate_button">Generate</string>
+	<string name="generate_copy_button">Copy</string>
+	<string name="generate_password_length_label">Password Length</string>
+	<string name="generate_mixed_case_label">Mixed Case</string>
+	<string name="generate_symbols_label">Symbols</string>
+	<string name="generate_numbers_label">Numbers</string>
+	<string name="generate_history_button">Password History</string>
+	<string name="generate_menu_preferences">Settings</string>
+	
+	<!-- Password History Activity -->
+	<string name="history_activity_title">Password History</string>
+	<string name="history_activity_subtitle">Tap a password to copy it to the clipboard</string>
+	<string name="history_clear_button">Clear Password History</string>
+	<string name="pass_length_prompt">Password Length</string>
+	<string name="history_confirm_history_delete_dialog_title">Please confirm</string>
+	<string name="history_confirm_history_delete_dialog">Are you sure you want to clear your password history?</string>
+	
+	<!-- Preferences -->
+	<string name="prefs_history_category">Password History</string>
+	<string name="prefs_history_keep">Keep password history</string>
+	<string name="prefs_history_limit">Password history limit</string>
+	<string name="prefs_history_size_dialog_title">Password history limit</string>
+	<string name="prefs_history_confirm_delete_dialog_title">Please confirm</string>
+	<string name="prefs_history_confirm_delete_dialog">Disabling password history will immediately clear your current password history items. Are you sure you want to do this?</string>
+</resources>
